@@ -154,7 +154,7 @@ flowchart LR
 
 ### 方式一：下载 APK
 
-到 Releases 页面（`https://github.com/<你的用户名>/<仓库名>/releases`）下载最新 APK，在手机上安装（需要允许「安装未知来源应用」）。
+到 Releases 页面（`https://github.com/zhaoruoxicat/Phone-note/releases`）下载最新 APK，在手机上安装（需要允许「安装未知来源应用」）。
 
 > 通话记录权限属于敏感权限，本 App 只适合自行编译或从 Releases 侧载安装，不适合直接上架 Google Play。
 
@@ -170,8 +170,8 @@ flowchart LR
 | Gradle | 8.11.1（已包含 wrapper，无需手动安装） |
 
 ```bash
-git clone https://github.com/<你的用户名>/<仓库名>.git
-cd <仓库名>
+git clone https://github.com/zhaoruoxicat/Phone-note.git
+cd Phone-note
 
 # 指定 Android SDK 路径；用 Android Studio 打开时会自动生成，命令行构建需要手动写
 echo "sdk.dir=$HOME/Android/Sdk" > local.properties
@@ -187,7 +187,7 @@ echo "sdk.dir=$HOME/Android/Sdk" > local.properties
 Windows 用户把 `./gradlew` 换成 `gradlew.bat`，`local.properties` 里的路径需要转义反斜杠，例如：
 
 ```properties
-sdk.dir=C\:\\Users\\你的用户名\\AppData\\Local\\Android\\Sdk
+sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
 ```
 
 Release 构建：仓库内未提供签名配置，`./gradlew assembleRelease` 产出的是未签名 APK，正式分发前请在 `app/build.gradle.kts` 中补上 `signingConfigs`，或用 `apksigner` 手动签名。
