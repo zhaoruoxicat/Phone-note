@@ -1,6 +1,7 @@
 # 本地来电备注（LocalCallNote）
 
 > 给那些「有必要知道是谁、但不想存进通讯录」的号码做本地标记；下次来电时，一块悬浮提示告诉你这是谁、上回说了什么。
+<img width="5694" height="2506" alt="Screenshot_2026-09-27-16-08-15-151_lockscreen" src="https://github.com/user-attachments/assets/4d3be67b-7c3c-4934-83e4-a891bbd04c07" />
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![platform](https://img.shields.io/badge/platform-Android%2010%2B-3DDC84.svg)
